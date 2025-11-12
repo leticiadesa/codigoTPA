@@ -1,0 +1,21 @@
+class Altura {
+    public static void main(String[] args) {
+        
+
+      double AlturaJ,AlturaP;
+      int    Ano;
+      AlturaJ = 1.34;
+      AlturaP = 1.45;
+      Ano = 0;
+      
+      while (AlturaJ <= AlturaP) {
+          AlturaJ = AlturaJ + 0.025;
+          AlturaP = AlturaP + 0.02;
+          Ano = Ano + 1;
+         
+      }
+      System.out.println("João vai ficar mais alto que Pedro em "+Ano+"anos");
+      
+      
+    }
+}

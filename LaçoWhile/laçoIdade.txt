@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+class Tabuada {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        int idade, maior, menor, i;
+        i = 1;
+        menor = 0;
+        maior = 0;
+
+        while (i <= 5) {
+
+            System.out.println("Digite a idade:");
+
+            idade = ler.nextInt();
+
+            if (idade >= 18) {
+
+                maior = maior + 1;
+
+            } else {
+
+                menor = menor + 1;
+
+            }
+
+            i++; 
+
+        }
+
+        System.out.println("Quantidade de maiores: " + maior + ", e menores: " + menor);
+
+        ler.close();
+
+    }
+
+}
+ 

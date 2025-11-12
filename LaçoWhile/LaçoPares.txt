@@ -1,0 +1,15 @@
+class Pares {
+    public static void main(String[] args) {
+
+        int I = 1;
+
+        while (I <= 500) {
+            if (I % 2 == 0) {
+                System.out.println(I); 
+            }
+
+            I++;
+        }
+    }
+}
+

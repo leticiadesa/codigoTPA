@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Altura {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        double Por1, Por2, Por3, Por4, Por5;
+        int Idade, Faixa1, Faixa2, Faixa3, Faixa4, Faixa5, I;
+
+       
+        Faixa1 = 0;
+        Faixa2 = 0;
+        Faixa3 = 0;
+        Faixa4 = 0;
+        Faixa5 = 0;
+        I = 1; 
+
+        while (I <= 10) {
+            System.out.print("Digite a idade da pessoa " + I + ": ");
+            Idade = ler.nextInt(); 
+
+            if (Idade <= 15) {
+                Faixa1++;
+            } else if (Idade <= 30) {
+                Faixa2++;
+            } else if (Idade <= 45) {
+                Faixa3++;
+            } else if (Idade <= 60) {
+                Faixa4++;
+            } else {
+                Faixa5++;
+            }
+
+            I++;
+        }
+
+        
+        Por1 = (Faixa1 * 100.0) / 10;
+        Por2 = (Faixa2 * 100.0) / 10;
+        Por3 = (Faixa3 * 100.0) / 10;
+        Por4 = (Faixa4 * 100.0) / 10;
+        Por5 = (Faixa5 * 100.0) / 10;
+
+        
+        
+        System.out.println("Faixa até 15 anos: " + Faixa1 + " pessoas - Percentual: " + Por1 + "%");
+        System.out.println("Faixa de 16 a 30 anos: " + Faixa2 + " pessoas - Percentual: " + Por2 + "%");
+        System.out.println("Faixa de 31 a 45 anos: " + Faixa3 + " pessoas - Percentual: " + Por3 + "%");
+        System.out.println("Faixa de 46 a 60 anos: " + Faixa4 + " pessoas - Percentual: " + Por4 + "%");
+        System.out.println("Faixa de 61 anos ou mais: " + Faixa5 + " pessoas - Percentual: " + Por5 + "%");
+
+        ler.close(); 
+    }
+}
