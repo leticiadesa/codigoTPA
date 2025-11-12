@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class OrdemCrescente {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+
+        int A, B, C;
+
+        System.out.print("Digite o valor de A: ");
+        A = ler.nextInt();
+
+        System.out.print("Digite o valor de B: ");
+        B = ler.nextInt();
+
+        System.out.print("Digite o valor de C: ");
+        C = ler.nextInt();
+
+        if (A <= B && B <= C) {
+
+            System.out.println(A + ", " + B + ", " + C);
+        } else if (A <= C && C <= B) {
+            System.out.println(A + ", " + C + ", " + B);
+        } else if (B <= A && A <= C) {
+            System.out.println(B + ", " + A + ", " + C);
+        } else if (B <= C && C <= A) {
+            System.out.println(B + ", " + C + ", " + A);
+        } else if (C <= A && A <= B) {
+            System.out.println(C + ", " + A + ", " + B);
+        } else {
+            System.out.println(C + ", " + B + ", " + A);
+
+        }
+
+        ler.close();
+
+    }
+
+}
+ 
