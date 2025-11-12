@@ -1,0 +1,30 @@
+import java.util.Scanner;
+ 
+public class ConsumoCombustivel {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+ 
+
+        System.out.print("Digite a distância percorrida  ");
+        double distancia = ler.nextDouble();
+
+        System.out.print("Digite a capacidade do tanque");
+        double litros = ler.nextDouble();
+
+        double consumo = distancia / litros;
+ 
+        System.out.printf("Consumo médio: %.2f km/L\n", consumo);
+ 
+        if (consumo >= 10) {
+            System.out.println("Classificação: Econômico");
+        } else {
+            System.out.println("Classificação: Não econômico");
+        }
+ 
+        ler.close();
+
+    }
+
+}
